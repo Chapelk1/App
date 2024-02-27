@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+body {
+  font-family: Roboto;
+  color: black;
+}
+ul,
+ol {
+  list-style: none;
+}
+ul,
+ol,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+img {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+    width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
