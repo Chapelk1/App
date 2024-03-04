@@ -1,0 +1,72 @@
+.advantages {
+  padding: 140px 0 114px 0;
+}
+.advantages .container {
+  width: 1130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-wraper {
+  max-width: 536px;
+}
+.advantages h2 {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--first-text-color);
+  margin-bottom: 14px;
+}
+.accentt-descr {
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 1.04;
+  letter-spacing: 0.04em;
+  color: var(--first-text-color);
+}
+.descr {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.35;
+  letter-spacing: 0.03em;
+  color: var(--first-text-color);
+  margin-bottom: 22px;
+}
+.advantages button {
+  font-size: 12px;
+  line-height: 111%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--first-text-color);
+  background-color: var(--first-bg-btn);
+}
+.advantages__list {
+  width: 452px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+}
+.advantages__item {
+  position: relative;
+  padding: 22px 34px 22px 70px;
+  background-color: var(--first-bg-btn);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 19px;
+}
+.advantages__item svg {
+  position: absolute;
+  top: 22px;
+  left: 28px;
+  width: 17px;
+  height: 17px;
+  fill: var(--first-text-color);
+}
+.advantages__item p {
+  max-width: 202px;
+}
+.end {
+  align-self: flex-end;
+}

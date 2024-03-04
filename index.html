@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,34 +46,38 @@
         </div>
       </section>
 
-      <section>
-        <h2>
-          The world’s largest network of non-cash micropayment and digital
-          pre-pay partners
-        </h2>
-        <ul>
-          <li>
-            <p><span>5bn</span>potential audience</p>
-          </li>
-          <li>
-            <p><span>166+</span>countries</p>
-          </li>
-          <li>
-            <p><span>1800+</span>partners</p>
-          </li>
-          <li>
-            <p><span>860m+</span>transactions</p>
-          </li>
-          <li>
-            <p><span>20k+</span>products</p>
-          </li>
-        </ul>
-        <button>explore network</button>
+      <section class="partners">
+        <div class="container">
+          <h2 class="partners__title">
+            The world’s largest network of non-cash micropayment and digital
+            pre-pay partners
+          </h2>
+          <ul class="partners__list">
+            <li>
+              <p><span>5bn</span>potential audience</p>
+            </li>
+            <li>
+              <p><span>166+</span>countries</p>
+            </li>
+            <li>
+              <p><span>1800+</span>partners</p>
+            </li>
+            <li>
+              <p><span>860m+</span>transactions</p>
+            </li>
+            <li>
+              <p><span>20k+</span>products</p>
+            </li>
+          </ul>
+          <button class="default__btn">explore network</button>
+        </div>
       </section>
 
-      <section>
+      <section class="why-we">
+        <h2 class="visually-hidden">advantages</h2>
         <ul>
           <li>
+            <div class="box"></div>
             <h3>Highly motivating low-cost micropayments</h3>
             <p>
               Offer non-cash micropayments & incentives with high-perceived
@@ -81,6 +85,7 @@
             </p>
           </li>
           <li>
+            <div class="box"></div>
             <h3>Globally scalable and locally relevant</h3>
             <p>
               Scale fast with our solutions that deliver highly relevant,
@@ -88,6 +93,7 @@
             </p>
           </li>
           <li>
+            <div class="box"></div>
             <h3>Easy integration and instant set up</h3>
             <p>
               A single API connection brings you cost-effective, compliance-free
@@ -97,98 +103,106 @@
         </ul>
       </section>
 
-      <section>
-        <h2>
+      <section class="customers">
+        <h2 class="customers__title">
           We power 1000+ of the world’s leading brands with our range of
           non-cash micropayment and pre-pay solutions:
         </h2>
 
-        <ul class="customers">
+        <ul class="customers__list">
           <li class="customers__item">
-            <svg class="customers__svg">
-              <use></use>
-            </svg>
+            <img
+              src="./src/client-1.png"
+              alt="client-1"
+              class="customers__img"
+            />
           </li>
           <li class="customers__item">
-            <svg class="customers__svg">
-              <use></use>
-            </svg>
+            <img
+              src="./src/client-2.png"
+              alt="client-2"
+              class="customers__img"
+            />
           </li>
           <li class="customers__item">
-            <svg class="customers__svg">
-              <use></use>
-            </svg>
+            <img
+              src="./src/client-3.png"
+              alt="client-3"
+              class="customers__img"
+            />
           </li>
           <li class="customers__item">
-            <svg class="customers__svg">
-              <use></use>
-            </svg>
+            <img
+              src="./src/client-4.png"
+              alt="client-4"
+              class="customers__img"
+            />
           </li>
           <li class="customers__item">
-            <svg class="customers__svg">
-              <use></use>
-            </svg>
+            <img
+              src="./src/client-5.png"
+              alt="client-5"
+              class="customers__img"
+            />
           </li>
           <li class="customers__item">
-            <svg class="customers__svg">
-              <use></use>
-            </svg>
-          </li>
-          <li class="customers__item">
-            <svg class="customers__svg">
-              <use></use>
-            </svg>
+            <img
+              src="./src/client-6.png"
+              alt="client-6"
+              class="customers__img"
+            />
           </li>
         </ul>
 
         <ul class="services">
           <li class="services__item">
-            <div></div>
-            <p>Mobile top-ups & Data bundles</p>
+            <div class="box"></div>
+            <p>Mobile top-ups <span>& Data bundles</span></p>
           </li>
           <li class="services__item">
-            <div></div>
-            <p>Branded currencies & vouchers</p>
+            <div class="box"></div>
+            <p>Branded currencies <span>& vouchers</span></p>
           </li>
           <li class="services__item">
-            <div></div>
+            <div class="box"></div>
             <p>Bill payments</p>
           </li>
         </ul>
       </section>
 
-      <section>
-        <div class="title-wraper">
-          <h2>WHY NON-CASH MICROPAYMENTS?</h2>
-          <p>
-            Open up a market of 5bn+ potential customers using non-cash
-            micropayments today
-          </p>
-          <p>
-            Forget the complexities of small cash payments. Customers are moving
-            to non-cash payments as an essential and highly-valued way to
-            receive or send small payments. They increasingly expect these kinds
-            of services from every business they interact with.
-          </p>
-          <button>why dt one?</button>
-        </div>
-        <div>
-          <ul class="advantages">
+      <section class="advantages">
+        <div class="container">
+          <div class="title-wraper">
+            <h2>WHY NON-CASH MICROPAYMENTS?</h2>
+            <p class="accentt-descr">
+              Open up a market of 5bn+ potential customers using non-cash
+              micropayments today
+            </p>
+            <p class="descr">
+              Forget the complexities of small cash payments. Customers are
+              moving to non-cash payments as an essential and highly-valued way
+              to receive or send small payments. They increasingly expect these
+              kinds of services from every business they interact with.
+            </p>
+            <button class="default__btn">why dt one?</button>
+          </div>
+
+          <ul class="advantages__list">
             <li class="advantages__item">
               <svg>
-                <use></use>
+                <use href="./src/symbol-defs.svg#icon-tick"></use>
               </svg>
               <p>No regulatory complexity or compliance issues</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item end">
               <svg>
-                <use></use>
+                <use href="./src/symbol-defs.svg#icon-tick"></use>
               </svg>
               <p>A single connection to scale your offer globally</p>
             </li>
             <li class="advantages__item">
               <svg>
-                <use></use>
+                <use href="./src/symbol-defs.svg#icon-tick"></use>
               </svg>
               <p>Make micropayments from as little as $0.10</p>
             </li>
@@ -196,13 +210,13 @@
         </div>
       </section>
 
-      <section>
-        <h2></h2>
+      <section class="solutions">
+        <h2 class="solutions__title"></h2>
         <div class="slider"></div>
         <button>explore solutions</button>
       </section>
 
-      <section>
+      <section class="specialized-solutions">
         <h2>We deliver dedicated solutions for every sector</h2>
         <p>
           View our customer-focused, sector-led solutions - backed by local
@@ -241,7 +255,7 @@
         <button>who we serve</button>
       </section>
 
-      <section>
+      <section class="appeal">
         <h2>Mobilise and monetise <span>your customers</span></h2>
         <button>get in touch</button>
       </section>
