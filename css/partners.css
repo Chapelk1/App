@@ -53,4 +53,10 @@
   text-align: center;
   color: var(--first-text-color);
   background-color: var(--first-bg-btn);
+  transition: color 250ms linear, background-color 250ms linear;
+}
+.partners button:hover,
+.partners button:focus {
+  color: var(--accent-text-color);
+  background-color: var(--first-btn-hover);
 }
