@@ -51,7 +51,7 @@
   width: 716px;
   height: 716px;
   margin-right: -54px;
-  background-image: url(/src/circle.png);
+  background-image: url(./src/circle.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
