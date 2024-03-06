@@ -36,3 +36,39 @@
   color: var(--accent-text-color);
   background-color: var(--first-btn-hover);
 }
+
+/* slider */
+
+.swiper {
+  width: 100%;
+  height: 70%;
+}
+
+.swiper-pagination-bullet {
+  display: inline;
+  padding-bottom: 4px;
+  width: auto;
+  border-radius: 0;
+  background: transparent;
+  opacity: unset;
+  transition: border-bottom 50ms linear;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 103%;
+  text-transform: uppercase;
+  color: rgba(0, 45, 36, 0.5);
+}
+.swiper-pagination-bullet:not(:last-child) {
+  margin-right: 32px !important;
+}
+.swiper-pagination-bullet-active {
+  border-bottom: 2px solid var(--accent-text-color);
+  color: var(--first-text-color);
+}
+.swiper-pagination {
+  top: 20px !important;
+}
+.swiper-wrapper{
+  top: 60px;
+}
