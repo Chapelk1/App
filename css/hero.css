@@ -1,9 +1,4 @@
-
-
 .hero {
-  display: flex;
-  overflow-x: hidden;
-  justify-content: space-between;
   background-color: var(--bg-hero-color);
 }
 .hero-text-wrap {
@@ -51,7 +46,7 @@
   width: 716px;
   height: 716px;
   margin-right: -54px;
-  background-image: url(./src/circle.png);
+  background-image: url(../src/circle.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -59,4 +54,17 @@
 .hero-img img {
   width: 516px;
   height: 516px;
+}
+.hero__container {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (min-width: 1280px) {
+  .hero__container {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: visible;
+  }
 }
