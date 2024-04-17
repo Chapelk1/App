@@ -79,3 +79,16 @@
 .end {
   align-self: flex-end;
 }
+
+
+
+
+@media screen and (max-width: 359px ) {
+  .advantages .container{
+    width: auto;
+    display: block;
+  }
+  .advantages__list{
+    width: auto;
+  }
+}

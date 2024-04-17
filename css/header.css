@@ -1,4 +1,5 @@
 header {
+  position: relative;
   padding: 24px 0 24px 0;
   background-color: var(--bg-hero-color);
 }
@@ -7,8 +8,7 @@ header .container {
   flex-direction: row-reverse;
 }
 .navigation {
-  display: flex;
-  gap: 28px;
+  display: none;
 }
 .navigation__list {
   display: flex;
@@ -43,4 +43,105 @@ header .container {
 }
 .navigation button:hover {
   color: var(--second-text-hover);
+}
+
+.menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: var(--first-text-color);
+  transition: transform 400ms linear;
+  transform: translateX(300%);
+}
+.open{
+  transform: translateX(0%);
+}
+
+.burger-menu-btn{
+  display: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+}
+.icon-menu{
+  width: 40px;
+  height: 40px;
+  fill: var(--first-text-color);
+}
+.burger-menu-close{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  overflow: hidden;
+}
+.icon-menu-close{
+  width: 40px;
+  height: 40px;
+  stroke: var(--second-text-color);
+}
+.navigation-menu{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.navigation-menu__list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+.navigation-menu__list a {
+  font-family: var(--font-family);
+  text-transform: var(--uper-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--second-text-color);
+}
+.navigation-menu button{
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+  font-family: var(--font-family);
+  text-transform: var(--uper-text);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: var(--second-text-color);
+  
+}
+
+
+
+
+@media screen and (min-width: 780px ) {
+ .menu{
+  display: none;
+}
+.navigation {
+  display: flex;
+  gap: 28px;
+}
+.burger-menu-btn{
+  display: none;
+
+}
 }

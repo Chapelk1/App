@@ -57,11 +57,14 @@ img {
 a {
   text-decoration: none;
 }
+
+
 .container {
   width: 1130px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .default__btn {
   border-radius: 76px;
   padding: 10px 23px;
@@ -84,4 +87,12 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@media screen and (max-width: 359px ) {
+  .container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 }

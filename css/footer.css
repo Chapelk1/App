@@ -61,3 +61,17 @@ footer a:focus {
   letter-spacing: 0.05em;
   color: var(--footer-second-text-color);
 }
+
+
+
+
+@media screen and (max-width: 359px ) {
+footer .wrap {
+  display: block;
+  
+} 
+ footer ul {
+  display: block;
+  
+}
+}

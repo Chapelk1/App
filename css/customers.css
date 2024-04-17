@@ -38,3 +38,9 @@
 .services__item span {
   display: block;
 }
+
+@media screen and (max-width: 359px ) {
+.services {
+  display: block;
+}
+}

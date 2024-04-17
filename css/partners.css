@@ -60,3 +60,10 @@
   color: var(--accent-text-color);
   background-color: var(--first-btn-hover);
 }
+
+@media screen and (max-width: 359px ) {
+.partners .container {
+  width: 100%;
+  text-align: center;
+}
+}

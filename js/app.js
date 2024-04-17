@@ -1,3 +1,5 @@
+
+
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
@@ -19,13 +21,9 @@ const swiper = new Swiper(".swiper", {
       }
     },
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
   effect: "coverflow",
   speed: 1000,
 });
@@ -58,3 +56,18 @@ const swiperSpecialized = new Swiper(".swiper-specialized-solutions", {
     },
   },
 });
+
+
+const refs = {
+  btnMenu: document.querySelector(".burger-menu-btn"),
+  btnMenuClose: document.querySelector(".burger-menu-close"),
+  menu: document.querySelector(".menu"),
+};
+
+const toggleMenu = () => {
+  refs.menu.classList.toggle("open");
+};
+
+refs.btnMenu.addEventListener("click", toggleMenu);
+refs.btnMenuClose.addEventListener("click", toggleMenu);
+

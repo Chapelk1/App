@@ -105,3 +105,24 @@
   width: 400px;
   height: auto;
 }
+
+
+
+@media screen and (max-width: 359px ) {
+.solutions__slider {
+  width: 100%;
+  height: auto;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+
+.swiper .swiper-wrapper {
+  width: 100%;
+  height: auto;
+
+}
+}

@@ -40,3 +40,10 @@
   text-align: center;
   color: var(--first-text-color);
 }
+
+@media screen and (max-width: 359px ) {
+.why-we ul {
+  width: auto;
+  display: block;
+}
+}
