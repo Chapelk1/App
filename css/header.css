@@ -1,52 +1,18 @@
+.navigation {
+  display: none;
+}
 header {
-  position: relative;
   padding: 24px 0 24px 0;
   background-color: var(--bg-hero-color);
+  
 }
 header .container {
   display: flex;
   flex-direction: row-reverse;
+  
 }
-.navigation {
-  display: none;
-}
-.navigation__list {
-  display: flex;
-  gap: 28px;
-}
-.navigation__list a {
-  text-transform: var(--uper-text);
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.03;
-  letter-spacing: 0.04em;
-  color: var(--first-text-color);
-  transition: color var(--transition);
-}
-.navigation__list a:hover {
-  color: var(--second-text-hover);
-}
-
-.navigation button {
-  background-color: transparent;
-  border: none;
-  overflow: hidden;
-  font-family: var(--font-family);
-  text-transform: var(--uper-text);
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.03;
-  letter-spacing: 0.04em;
-  color: var(--first-text-color);
-  cursor: pointer;
-  transition: color var(--transition);
-}
-.navigation button:hover {
-  color: var(--second-text-hover);
-}
-
 .menu{
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   width: 50%;
@@ -70,6 +36,7 @@ header .container {
   border: none;
   overflow: hidden;
 }
+
 .icon-menu{
   width: 40px;
   height: 40px;
@@ -130,8 +97,6 @@ header .container {
 }
 
 
-
-
 @media screen and (min-width: 780px ) {
  .menu{
   display: none;
@@ -144,4 +109,58 @@ header .container {
   display: none;
 
 }
+header {
+  position: relative;
+  padding: 24px 0 24px 0;
 }
+}
+
+@media screen and (min-width: 1200px ) {
+ 
+header .container {
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+
+.navigation__list {
+  display: flex;
+  gap: 28px;
+}
+.navigation__list a {
+  text-transform: var(--uper-text);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.03;
+  letter-spacing: 0.04em;
+  color: var(--first-text-color);
+  transition: color var(--transition);
+}
+.navigation__list a:hover {
+  color: var(--second-text-hover);
+}
+
+.navigation button {
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+  font-family: var(--font-family);
+  text-transform: var(--uper-text);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.03;
+  letter-spacing: 0.04em;
+  color: var(--first-text-color);
+  cursor: pointer;
+  transition: color var(--transition);
+}
+.navigation button:hover {
+  color: var(--second-text-hover);
+}
+
+
+
+
+
+}
+

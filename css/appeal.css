@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 200px 0 180px 0;
+  padding: 0 0 120px 0;
 }
 .appeal h2 {
-  font-size: 54px;
-  line-height: 1.24;
-  letter-spacing: 0.05em;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0.01em;
   text-align: center;
   color: var(--first-text-color);
   margin-bottom: 42px;
@@ -30,4 +30,17 @@
 .appeal button:focus {
   color: var(--accent-text-color);
   background-color: var(--first-btn-hover);
+}
+
+@media screen and (min-width: 1200px) {
+  .appeal {
+  
+  padding: 200px 0 180px 0;
+}
+.appeal h2 {
+  font-size: 54px;
+  line-height: 1.24;
+  letter-spacing: 0.05em;
+  
+}
 }

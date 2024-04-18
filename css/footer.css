@@ -1,51 +1,50 @@
 footer {
-  padding: 58px 112px 38px 50px;
+  padding: 58px 50px 38px 50px;
   background-color: var(--bg-footer-color);
 }
 footer .wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 70px;
+  display: block;
 }
 .wrap-svg {
   display: flex;
   gap: 32px;
+  margin-bottom: 30px;
 }
 footer svg {
   width: 29px;
   height: 29px;
   cursor: pointer;
   transition: fill 250ms linear;
+  fill: var(--first-bg-btn);
 }
 footer svg:hover,
 footer svg:focus {
-  fill: var(--first-bg-btn);
+  fill: var(--second-btn-hover);
 }
-footer ul {
-  display: flex;
-  gap: 72px;
+ footer ul {
+  display: block;
 }
 footer li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-  max-width: 136px;
+  margin-bottom: 30px;
 }
 footer h3 {
-  font-weight: 400;
-  font-size: 13px;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 1.03;
   letter-spacing: 0.04em;
-  text-transform: uppercase;
+  text-transform: var(--uper-text);
   color: var(--accent-text-color);
 }
 
 footer a {
-  font-size: 11px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 1.22;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   color: var(--second-text-color);
   transition: color 250ms linear;
 }
@@ -65,13 +64,40 @@ footer a:focus {
 
 
 
-@media screen and (max-width: 359px ) {
+@media screen and (min-width: 1200px ) {
+  footer {
+  padding: 58px 112px 38px 50px;
+}
 footer .wrap {
-  display: block;
-  
-} 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
  footer ul {
-  display: block;
+  display: flex;
+  gap: 72px;
+}
+footer li {
+  max-width: 136px;
+  margin-bottom: 0;
+}
+.wrap-svg {
   
+  margin-bottom: 0;
+}
+footer h3 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.03;
+  letter-spacing: 0.04em;
+  
+}
+
+footer a {
+  font-size: 11px;
+  line-height: 1.22;
+  letter-spacing: 0.05em;
+  transition: color 250ms linear;
 }
 }

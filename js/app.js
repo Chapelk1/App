@@ -21,25 +21,27 @@ const swiper = new Swiper(".swiper", {
       }
     },
   },
-  // autoplay: {
-  //   delay: 5000,
-  // },
-  effect: "coverflow",
+  autoplay: {
+    delay: 5000,
+  },
+  
   speed: 1000,
 });
 
 const swiperSpecialized = new Swiper(".swiper-specialized-solutions", {
   direction: "horizontal",
-  loop: true,
-  spaceBetween: 30,
-  slidesPerView: 2,
-  // autoplay: {
-  //   delay: 3000,
-  // },
-  // speed: 1000,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+  },
+  speed: 500,
   breakpoints: {
+    340: {
+      slidesPerView: 1.16,
+      spaceBetween: 30,
+    },
     570: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 30,
     },
     900: {
