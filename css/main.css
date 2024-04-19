@@ -61,14 +61,15 @@ a {
 
 
 .container {
-  width: 1130px;
+  position: relative;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .default__btn {
   border-radius: 76px;
-  padding: 10px 23px;
+  padding: 20px 50px;
   border: none;
   overflow: hidden;
   cursor: pointer;
@@ -90,10 +91,15 @@ a {
   overflow: hidden;
 }
 
-@media screen and (max-width: 779px ) {
-  .container {
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+@media screen and (min-width: 768px ) {
+  .default__btn {
+      padding: 10px 23px;
+    }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+      width: 1130px;
+      padding: 0 15px;
+      margin: 0 auto;
+    }
 }

@@ -1,7 +1,11 @@
 .hero {
   background-color: var(--bg-hero-color);
+  overflow: hidden;
 }
-
+.hero .container{
+  display: flex;
+  justify-content: center;
+}
 .hero-text-wrap h1 {
   font-family: var(--font-family);
   font-weight: 400;
@@ -20,6 +24,7 @@
   letter-spacing: 0.03em;
   color: #002d24;
   margin-bottom: 26px;
+  max-width: 600px;
 }
 .hero-text-wrap button {
   color: var(--second-text-color);
@@ -35,47 +40,48 @@
   font-size: 12px;
   letter-spacing: 0.04em;
 }
-.hero-img {
+.circle {
   display: none;
 }
 
-.hero-img img {
-  width: 516px;
-  height: 516px;
+.person {
+  display: none;
 }
-.hero__container {
-  display: flex;
-  overflow-x: hidden;
-  justify-content: space-between;
-  width: 100%;
-  padding: 30px;
-  padding-top: 0;
+@media screen and (min-width: 768px) {
+  .hero{
+    padding: 60px 0 60px 0;
+  }
+  .hero-text-wrap p {
+    max-width: 600px;
+  }
 }
-
 
 @media screen and (min-width: 1200px ) {
-.hero-img {
+  .hero-text-wrap {
+    max-width: 460px;
+  }
+  .hero {
+    padding: 200px 0 200px 0;
+  }
+  .hero .container{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+}
+  .circle{
+  position: absolute;
+  display: block;
+  top: -190px;
+  right: -84px;
   width: 716px;
   height: 716px;
-  margin-right: -54px;
-  background-image: url(../src/circle.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
-.hero__container {
-    align-items: center;
-  }
-  .hero-text-wrap {
-  max-width: 460px;
-}
-.hero__container {
-  
-  padding: 0;
-  
+.person{
+  position: absolute;
+  display: block;
+  top: -90px;
+  right: 16px;
+  width: 516px;
+  height: 516px;
 }
 }
 

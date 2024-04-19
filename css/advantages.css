@@ -16,7 +16,7 @@
 }
 .accentt-descr {
   font-weight: 400;
-  font-size: 46px;
+  font-size: 36px;
   line-height: 1.04;
   letter-spacing: 0.01em;
   color: var(--first-text-color);
@@ -67,7 +67,7 @@
 .advantages__item p {
   max-width: 202px;
 }
-.end {
+.advantages__item:nth-child(2) {
   align-self: flex-end;
 }
 
@@ -82,7 +82,23 @@
   align-items: flex-start;
   gap: 22px;
   }
-
+@media screen and (min-width: 768px) {
+.title-wraper {
+    margin-bottom: 40px;
+  }
+  .advantages__item:nth-child(2) {
+    align-self: center;
+  }
+  .advantages__item:nth-child(3) {
+    align-self: flex-end;
+  }
+  .accentt-descr {
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 1.04;
+    letter-spacing: 0.01em;
+  }
+}
 
 @media screen and (min-width: 1200px ) {
   .advantages {
@@ -93,10 +109,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: row;
 }
-  .advantages__list {
-  width: 452px;
-  
+.title-wraper {
+  margin-bottom: 22px;
 }
 .accentt-descr {
   font-weight: 400;
@@ -109,5 +125,14 @@
 .accentt-descr {
   letter-spacing: 0.04em;
 }
- 
+ .advantages__list {
+   width: 452px;
+ }
+ .advantages__item:nth-child(2) {
+   align-self: flex-end;
+ }
+
+ .advantages__item:nth-child(3) {
+   align-self: flex-start;
+ }
 }

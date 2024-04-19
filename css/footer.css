@@ -61,7 +61,27 @@ footer a:focus {
   color: var(--footer-second-text-color);
 }
 
-
+@media screen and (min-width: 768px) {
+  footer .wrap{
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 50px;
+      margin-bottom: 70px;
+  }
+    footer ul {
+      display: flex;
+      gap: 40px;
+      
+    }
+    footer li {
+      max-width: 136px;
+      margin-bottom: 0;
+    }
+    .wrap-svg{
+      align-items: flex-end;
+      margin-bottom: 0;
+    }
+}
 
 
 @media screen and (min-width: 1200px ) {
@@ -73,9 +93,11 @@ footer .wrap {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 70px;
+  flex-direction: row;
 }
  footer ul {
   display: flex;
+  flex-wrap: nowrap;
   gap: 72px;
 }
 footer li {
@@ -83,8 +105,8 @@ footer li {
   margin-bottom: 0;
 }
 .wrap-svg {
+  align-items: flex-start;
   
-  margin-bottom: 0;
 }
 footer h3 {
   font-weight: 400;

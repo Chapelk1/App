@@ -31,17 +31,23 @@ const swiper = new Swiper(".swiper", {
 const swiperSpecialized = new Swiper(".swiper-specialized-solutions", {
   direction: "horizontal",
   centeredSlides: true,
+  spaceBetween: 30,
+  loop: true,
   autoplay: {
     delay: 3000,
   },
   speed: 500,
   breakpoints: {
-    340: {
-      slidesPerView: 1.16,
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    360: {
+      slidesPerView: 1.1,
       spaceBetween: 30,
     },
     570: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
       spaceBetween: 30,
     },
     900: {
@@ -49,11 +55,11 @@ const swiperSpecialized = new Swiper(".swiper-specialized-solutions", {
       spaceBetween: 30,
     },
     1180: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 30,
     },
     1670: {
-      slidesPerView: 6,
+      slidesPerView: 5,
       spaceBetween: 30,
     },
   },
